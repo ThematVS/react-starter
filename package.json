@@ -1,7 +1,7 @@
 {
   "name": "react-starter",
   "version": "0.0.1",
-  "description": "Starter kit to build application using react.js",
+  "description": "Simple React TODO homework",
   "main": "index.js",
   "scripts": {
     "prestart": "browserify -d -t babelify -e ./app/app.jsx -o ./dist/bundle.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/EvgenyKravchenko/react-starter"
+    "url": "https://github.com/ThematVS/react-starter"
   },
   "keywords": [
     "reactjs",
     "starter-kit"
   ],
-  "author": "Yevhenii Kravchenko",
+  "author": "ThematVS",
   "license": "MIT",
-  "homepage": "https://github.com/EvgenyKravchenko/react-starter",
+  "homepage": "https://github.com/ThematVS/react-starter",
   "dependencies": {
     "babelify": "^5.0.4",
     "browserify": "^9.0.3",

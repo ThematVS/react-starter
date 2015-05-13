@@ -1,7 +1,39 @@
 <!doctype html>
 <html>
     <head>
-        <title>React Starter Page</title>
+        <title>Simple TODO List</title>
+<!--
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+-->
+    <style>
+        table {
+            width: 50%;
+            border: solid 1px;
+            border-spacing: 0;
+        }
+        table thead tr {
+            height: 45px;
+            background-color: #fffbdc;
+        }
+        table td {
+            border: solid 1px;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        table td {
+            text-align: center;
+        }
+        table tr.item td:nth-child(1) {
+            text-align: left;
+        }
+        table td.yes {
+            background-color: #7fff00;
+        }
+        table td.no {
+            background-color: #ff6347;
+        }
+    </style>
+
     </head>
     <body>
         <div id="content"></div>
