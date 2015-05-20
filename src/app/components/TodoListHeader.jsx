@@ -26,7 +26,7 @@ class TodoListHeader extends React.Component{
             filterActive: false,
             filterValue: completedValue
         });
-console.log('ItemCompletedFilter: '+completedValue);
+
         this.props.onFilterCompleted(completedValue);
     }
 

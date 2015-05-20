@@ -37,8 +37,6 @@ class TodoWidget extends React.Component {
     }
 
     handleItemRemove(itemIndex) {
-console.log('remove');
-
         var data = this.state.items;
         data.splice(itemIndex, 1);
 
@@ -49,13 +47,13 @@ console.log('remove');
 
     handleClearCompleted() {
         var newItems = [];
-console.log(this.state.items);
+
         this.state.items.forEach(function(item) {
             if (!item.isCompleted) {
                 newItems.push(item);
             }
         });
-console.log(newItems);
+
         this.setState({
             items: newItems
         });
