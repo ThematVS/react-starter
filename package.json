@@ -4,9 +4,10 @@
   "description": "Simple React TODO homework",
   "main": "index.js",
   "scripts": {
-    "prestart": "browserify -d -t babelify -e ./app/app.jsx -o ./dist/bundle.js",
+    "prestart": "browserify -d -t babelify -e ./src/app/components/App.jsx -o ./dist/bundle.js",
     "start": "http-server",
-    "watch": "watchify -d -t babelify -e ./app/app.jsx -o ./dist/bundle.js"
+    "watch": "watchify -d -t babelify -e ./src/app/components/App.jsx -o ./dist/bundle.js",
+    "build": "NODE_ENV=production"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,9 @@
     "babelify": "^5.0.4",
     "browserify": "^9.0.3",
     "react": "^0.13.1",
+    "react-datagrid": "^1.1.13",
+    "reactify": "^1.1.0",
+    "uglify-js": "^2.4.20",
     "watchify": "^3.1.0"
   }
 }
